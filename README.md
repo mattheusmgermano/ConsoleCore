@@ -1,2 +1,0 @@
-## Console Core
-## Mattheus Germano

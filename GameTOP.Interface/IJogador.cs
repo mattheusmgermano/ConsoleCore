@@ -1,9 +1,9 @@
 namespace GameTOP.Interface
 {
-        public interface IJogador
+    public interface iJogador
     {
-         string Corre();
-         string Chuta();
+         string Chute();
          string Passe();
+         string Corre();
     }
 }

@@ -1,27 +1,26 @@
 using GameTOP.Interface;
 
-namespace GameTOP.lib
+namespace GameTOP.Lib 
 {
-    public class Jogador2 : IJogador
+    public class Jogador2 : iJogador
     {
-        public string _Nome { get; }
+        public string Nome { get; }
         public Jogador2(string nome)
         {
-            _Nome = nome;
+            this.Nome = nome;
         }
-        public string Corre()
-        {
-            return $"{_Nome} está correndo.\n";
-        }
-
-        public string Chuta()
-        {
-            return $"{_Nome} está passando.\n";
-        }
-
-        public string Passe()
-        {
-            return $"{_Nome} está passando.\n";
-        }
+        public string Chute()
+         {
+             return $"{this.Nome} chutou a bola!";
+         }
+         public string Passe()
+         {
+             return $"{this.Nome} passou a bola!";
+         }
+         
+         public string Corre()
+         {
+             return $"{this.Nome} correu como um louco!";
+         }
     }
 }
